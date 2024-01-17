@@ -1,3 +1,5 @@
+import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
+
 import './About.scss';
 
 const About = () => {
@@ -25,6 +27,24 @@ const About = () => {
                   See My Past Work
                 </a>
               </div>
+              <span className="flex justify-center">
+                  <a
+                    aria-label="linkedin"
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/burhan-k%C3%B6seler-2b4130235/"
+                  >
+                    <IconBrandLinkedin width={32} height={32} />
+                  </a>
+                  <a
+                    aria-label="github"
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://github.com/ksburhan"
+                  >
+                    <IconBrandGithub width={32} height={32} />
+                  </a>
+                </span>
             </div>
             <div className="hero-img lg:max-w-lg lg:w-full md:w-1/2 w-5/6"></div>
           </div>
