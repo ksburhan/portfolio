@@ -11,7 +11,7 @@ import Testimonials from "./components/Testimonials";
 
 const App = () => {
     return (
-        <main className="text-gray-900 bg-gray-200 body-font">
+        <main className="text-gray-900 bg-gray-100 body-font">
             <Navbar/>
             <About/>
             <Projects/>
