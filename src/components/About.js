@@ -9,7 +9,7 @@ const About = () => {
             <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
               <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium">
               Hi, I'm Burhan Köseler.
-                <br className="hidden lg:inline-block" />A passionate Fullstack Engineer based in Japan. 📍
+                <br className="hidden lg:inline-block" />A passionate Full-Stack Engineer based in Japan. 📍
               </h1>
               <p className="mb-8 leading-relaxed">
                 Hey, my name is Burhan, and I'm a Full-Stack Developer. My passion is to create and develop clean Services with clean Websites for my users.
