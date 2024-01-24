@@ -1,15 +1,15 @@
 .hero-img {
   background-image: url("../../public/hero.jpeg");
-  width: 25rem;
-  height: 25rem;
+  width: 23rem;
+  height: 23rem;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   border: 3px solid black;
 
-  @media (max-width: 500px) {
-    width: 28rem;
-    height: 28rem;
+  @media (max-width: 400px) {
+    width: 20rem;
+    height: 20rem;
   }
 
   animation: morph 8s ease-in-out infinite;
