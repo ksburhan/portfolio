@@ -40,6 +40,14 @@ export const skills = [
     img: "https://skillicons.dev/icons?i=tailwind,scss",
     id: 4,
   },
+  {
+    img: "https://skillicons.dev/icons?i=docker,kubernetes",
+    id: 5,
+  },
+  {
+    img: "https://skillicons.dev/icons?i=java,nodejs",
+    id: 6,
+  },
 ];
 
 export const testimonials = [
