@@ -91,6 +91,11 @@ export const contacts = [
     href: 'https://www.instagram.com/ks_burhan/',
   },
   {
+    type: 'LinkedIn',
+    text: 'Burhan Köseler',
+    href: 'https://www.linkedin.com/in/burhan-k%C3%B6seler-2b4130235/',
+  },
+  {
     type: 'Github',
     text: 'ksburhan',
     href: 'https://github.com/ksburhan',
