@@ -73,3 +73,26 @@ export const testimonials = [
     id: 3,
   },
 ];
+
+export const contacts = [
+  {
+    type: 'Email',
+    text: 'burhan.koeseler@hotmail.de',
+    href: 'mailto:burhan.koeseler@hotmail.de',
+  },
+  {
+    type: 'Location',
+    text: 'Osaka, Japan',
+    href: 'https://maps.app.goo.gl/TyTzqfde5sS4HiLZA',
+  },
+  {
+    type: 'Instagram',
+    text: '@ks_burhan',
+    href: 'https://www.instagram.com/ks_burhan/',
+  },
+  {
+    type: 'Github',
+    text: 'ksburhan',
+    href: 'https://github.com/ksburhan',
+  },
+]
