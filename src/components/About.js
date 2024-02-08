@@ -2,7 +2,7 @@ import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
 import { CpuChipIcon } from "@heroicons/react/24/solid";
 import React from "react";
 
-import { skills } from "../data";
+import { skills, about } from "../data";
 import './About.scss';
 
 const About = () => {
@@ -11,12 +11,11 @@ const About = () => {
       <div className="container max-w-6xl mx-auto flex px-10 md:flex-row flex-col items-center h-[calc(100vh-72px)]">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-bold">
-            Hi, I'm Burhan Köseler.
-            <br className="hidden lg:inline-block" />A passionate Full-Stack Engineer based in Japan. 📍
+            {about.header}
+            <br className="hidden lg:inline-block" />{about.description}
           </h1>
           <p className="mb-4 leading-relaxed">
-            Hey, my name is Burhan, and I'm a Full-Stack Developer. My passion is to create and develop clean Services with clean Websites for my users.
-            My main stack currently is React/Next.js in combination with Tailwind CSS and TypeScript.
+            {about.about}
           </p>
           <div className="flex justify-center">
             <a

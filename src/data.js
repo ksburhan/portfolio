@@ -1,3 +1,10 @@
+export const about = {
+  header: "Hi, I'm Burhan Köseler.",
+  description: "A passionate Full-Stack Engineer based in Japan. 📍",
+  about: "Hey, my name is Burhan, and I'm a Full-Stack Developer. My passion is to create and develop clean Services with clean Websites for my users.\n My main stack currently is React/Next.js in combination with Tailwind CSS and TypeScript.",
+
+}
+
 export const projects = [
   // {
   //   link: "https://fliegengitterworld.de",
