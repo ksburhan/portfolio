@@ -4,13 +4,13 @@ import { testimonials } from "../data";
 
 const Testimonials = () => {
 
-    let content = 
-      <h1 className="sm:text-4xl text-3xl font-medium text-center mb-12">
-        Coming soon.. ?
-      </h1>;
-    if(testimonials.length > 0){
-      content = <div className="flex flex-wrap m-4">
-        {testimonials.map((testimonial) => (
+  let content =
+    <h1 className="sm:text-4xl text-3xl font-medium text-center mb-12">
+      Coming soon.. ?
+    </h1>;
+  if (testimonials.length > 0) {
+    content = <div className="flex flex-wrap m-4">
+      {testimonials.map((testimonial) => (
         <div key={testimonial.id} className="p-4 md:w-1/2 w-full">
           <div className="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
             <CommandLineIcon className="block w-8 text-gray-500 mb-4" />
@@ -33,20 +33,20 @@ const Testimonials = () => {
           </div>
         </div>
       ))};
+    </div>
+  }
+
+  return (
+    <section id="testimonials" className="bg-white">
+      <div className="container max-w-7xl px-5 py-10 mx-auto text-center">
+        <UsersIcon className="w-10 inline-block mb-4" />
+        <h1 className="sm:text-4xl text-3xl font-medium title-font  mb-12">
+          Client Testimonials
+        </h1>
+        {content}
       </div>
-    }
-    
-    return (
-        <section id="testimonials" className="bg-white">
-          <div className="container max-w-7xl px-5 py-10 mx-auto text-center">
-            <UsersIcon className="w-10 inline-block mb-4" />
-            <h1 className="sm:text-4xl text-3xl font-medium title-font  mb-12">
-              Client Testimonials
-            </h1>
-              {content}
-          </div>
-        </section>
-      );
+    </section>
+  );
 }
 
 export default Testimonials;

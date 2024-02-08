@@ -8,12 +8,12 @@ import Testimonials from "../components/Testimonials"
 const Home = () => {
     return (
         <main className="text-gray-900 bg-gray-100 body-font">
-            <Navbar/>
-            <About/>
-            <Projects/>
-            <Resume/>
-            <Testimonials/>
-            <Contact/>
+            <Navbar />
+            <About />
+            <Projects />
+            <Resume />
+            <Testimonials />
+            <Contact />
         </main>
     );
 }

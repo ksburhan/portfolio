@@ -3,13 +3,13 @@ import React from "react";
 import { projects } from "../data";
 
 const Projects = () => {
-  let content = 
-      <h1 className="sm:text-4xl text-3xl font-medium text-center mb-12">
-        Coming soon.. ?
-      </h1>;
+  let content =
+    <h1 className="sm:text-4xl text-3xl font-medium text-center mb-12">
+      Coming soon.. ?
+    </h1>;
 
-if(projects.length > 0){
-      content = <div className="flex flex-wrap -m-4">
+  if (projects.length > 0) {
+    content = <div className="flex flex-wrap -m-4">
       {projects.map((project) => (
         <a
           href={project.link}
@@ -34,23 +34,23 @@ if(projects.length > 0){
         </a>
       ))}
     </div>;
-}
+  }
 
-    return (
-        <section id="projects" className="body-font bg-white">
-          <div className="container max-w-7xl px-5 py-10 mx-auto text-center lg:px-40">
-            <div className="flex flex-col w-full mb-20">
-              <CodeBracketIcon className="mx-auto inline-block w-10 mb-4" />
-              <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4">
-                Apps I've Built
-              </h1>
-              <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-              </p>
-            </div>
-            {content}
-          </div>
-        </section>
-      );
+  return (
+    <section id="projects" className="body-font bg-white">
+      <div className="container max-w-7xl px-5 py-10 mx-auto text-center lg:px-40">
+        <div className="flex flex-col w-full mb-20">
+          <CodeBracketIcon className="mx-auto inline-block w-10 mb-4" />
+          <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4">
+            Apps I've Built
+          </h1>
+          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+          </p>
+        </div>
+        {content}
+      </div>
+    </section>
+  );
 }
 
 export default Projects;
