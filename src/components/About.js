@@ -48,7 +48,7 @@ const About = () => {
               </p>
             </div>
             <ul>
-            <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+            <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2 justify-center">
               {skills.map((skill) => (
                     <li key={skill.id} className="p-3">
                       <img src={skill.img} alt="skill-icon" />
