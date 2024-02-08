@@ -5,7 +5,7 @@ import { projects } from "../data";
 const Projects = () => {
   let content =
     <h1 className="sm:text-4xl text-3xl font-medium text-center mb-12">
-      Coming soon.. ?
+      Coming soon!
     </h1>;
 
   if (projects.length > 0) {

@@ -5,8 +5,8 @@ import { testimonials } from "../data";
 const Testimonials = () => {
 
   let content =
-    <h1 className="sm:text-4xl text-3xl font-medium text-center mb-12">
-      Coming soon.. ?
+    <h1 className="sm:text-3xl text-2xl font-medium text-center mb-12">
+      Hopefully coming soon..
     </h1>;
   if (testimonials.length > 0) {
     content = <div className="flex flex-wrap m-4">
