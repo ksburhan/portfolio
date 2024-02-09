@@ -2,7 +2,7 @@ import React from "react";
 import { useCallback, useMemo, useState } from 'react';
 import { EnvelopeIcon } from "@heroicons/react/24/solid";
 
-import { contacts } from "../data";
+import { contacts } from "../data/data";
 
 const Contact = () => {
   const defaultData = useMemo(
@@ -42,8 +42,8 @@ const Contact = () => {
       <div className='mx-auto max-w-screen-lg'>
         <div className="flex flex-col gap-y-6">
           <div className="flex flex-col gap-6 md:flex-row md:items-center">
-            <EnvelopeIcon className="hidden h-16 w-16 text-white md:block" />
-            <h2 className="text-2xl font-bold text-white">Get in touch</h2>
+            <EnvelopeIcon className="hidden w-14 md:block" />
+            <h2 className="text-3xl font-bold">Get in touch</h2>
           </div>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             <div className="order-2 col-span-1 md:order-1 ">
@@ -69,7 +69,7 @@ const Contact = () => {
                 />
                 <button
                   aria-label="Submit contact form"
-                  className="w-max rounded-full border-2 border-orange-600 bg-stone-900 px-4 py-2 text-sm font-medium text-white shadow-md outline-none hover:bg-stone-800 focus:ring-2 focus:ring-orange-600 focus:ring-offset-2 focus:ring-offset-stone-800"
+                  className="w-max rounded bg-sky-300 px-4 py-2 text-sm font-medium shadow-md outline-none hover:bg-stone-800"
                   type="submit">
                   Send Message
                 </button>
