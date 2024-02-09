@@ -2,7 +2,7 @@ import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
 import { CpuChipIcon } from "@heroicons/react/24/solid";
 import React from "react";
 
-import { skills, about } from "../data";
+import { skills, about } from "../data/data";
 import './About.scss';
 
 const About = () => {

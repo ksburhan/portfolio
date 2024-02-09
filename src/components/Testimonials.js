@@ -1,6 +1,6 @@
 import { CommandLineIcon, UsersIcon } from "@heroicons/react/24/solid";
 import React from "react";
-import { testimonials } from "../data";
+import { testimonials } from "../data/data";
 
 const Testimonials = () => {
 
