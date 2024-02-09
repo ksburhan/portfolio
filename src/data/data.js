@@ -9,13 +9,13 @@ export const education = [
     date: 'March 2018 - February 2022',
     location: 'OTH Regensburg, Germany',
     title: 'Bachelor of Science in Computer Science',
-    content: <p>Courses in Computer Graphics, AI, Software Engineering and Software Architecture Design. Bachelors Thesis: Framework for AI creation and comparing different AI algorithms.</p>,
+    content: "Courses in Computer Graphics, AI, Software Engineering and Software Architecture Design. Bachelors Thesis: Framework for AI creation and comparing different AI algorithms.",
   },
   {
     date: 'September 2015 - July 2017',
     location: 'Technik FOS Munich, Germany',
     title: 'Technical High School Graduation',
-    content: <p>High school classes in addition to 10 week internship in electronic technologies and 10 week internship in metal technologies.</p>,
+    content: "High school classes in addition to 10 week internship in electronic technologies and 10 week internship in metal technologies.",
   },
 ];
 
@@ -25,7 +25,7 @@ export const work = [
     location: 'Xibix Solutions GmbH, Munich, Germany',
     title: 'Junior Software Engineer',
     content: (
-      <p>
+      <>
         <ul>
           <li>Teammember of a Microservice Web development Project using Java (Quarkus), Angular, NGRX</li>
           <li>Fullstack Development of a car messaging Service</li>
@@ -38,7 +38,7 @@ export const work = [
           <li>Analyzed user needs and proposed solutions to meet them</li>
           <li>Communicated regularly with Product Owners of the BMW Group</li>
         </ul>
-      </p>
+      </>
     ),
   },
   {
@@ -46,7 +46,7 @@ export const work = [
     location: 'CipSoft GmbH, Regensburg, Germany',
     title: 'Internship',
     content: (
-      <p>
+      <>
         <ul>
           <li>Ownership of project "visualize relationships between game content".</li>
           <li>Researched and prepared documentation about bulk importing into Neo4j database.</li>
@@ -56,7 +56,7 @@ export const work = [
           <li>Collaborated effectively with members of software development team and personnel in other
             departments.</li>
         </ul>
-      </p>
+      </>
     ),
   },
 ];

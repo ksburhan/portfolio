@@ -16,19 +16,23 @@ const Resume = () => {
               <span className="absolute inset-x-0 -bottom-1 border-b-2 border-sky-300" />
             </div>
           </div>
-          <div className="col-span-1 flex flex-col md:col-span-3">{work.map((item, index) => (
-            <div className="flex flex-col pb-8 text-center last:pb-0 md:text-left">
-              <div className="flex flex-col pb-4">
-                <h2 className="text-xl font-bold">{item.title}</h2>
-                <div className="flex items-center justify-center gap-x-2 md:justify-start">
-                  <span className="flex-1 text-sm font-medium italic sm:flex-none">{item.location}</span>
-                  <span>•</span>
-                  <span className="flex-1 text-sm sm:flex-none">{item.date}</span>
+          <div className="col-span-1 flex flex-col md:col-span-3">
+            {
+              work.map((item, index) => (
+                <div key={index} className="flex flex-col pb-8 text-center last:pb-0 md:text-left">
+                  <div className="flex flex-col pb-4">
+                    <h2 className="text-xl font-bold">{item.title}</h2>
+                    <div className="flex items-center justify-center gap-x-2 md:justify-start">
+                      <span className="flex-1 text-sm font-medium italic sm:flex-none">{item.location}</span>
+                      <span>•</span>
+                      <span className="flex-1 text-sm sm:flex-none">{item.date}</span>
+                    </div>
+                  </div>
+                  {item.content}
                 </div>
-              </div>
-              {item.content}
-            </div>
-          ))}</div>
+              ))
+            }
+          </div>
         </div>
         <div className="grid grid-cols-1 gap-y-4 py-8 first:pt-0 last:pb-0  md:grid-cols-4">
           <div className="col-span-1 flex justify-center md:justify-start">
@@ -37,19 +41,23 @@ const Resume = () => {
               <span className="absolute inset-x-0 -bottom-1 border-b-2 border-sky-300" />
             </div>
           </div>
-          <div className="col-span-1 flex flex-col md:col-span-3">{education.map((item, index) => (
-            <div className="flex flex-col pb-8 text-center last:pb-0 md:text-left">
-              <div className="flex flex-col pb-4">
-                <h2 className="text-xl font-bold">{item.title}</h2>
-                <div className="flex items-center justify-center gap-x-2 md:justify-start">
-                  <span className="flex-1 text-sm font-medium italic sm:flex-none">{item.location}</span>
-                  <span>•</span>
-                  <span className="flex-1 text-sm sm:flex-none">{item.date}</span>
+          <div className="col-span-1 flex flex-col md:col-span-3">
+            {
+              education.map((item, index) => (
+                <div key={index} className="flex flex-col pb-8 text-center last:pb-0 md:text-left">
+                  <div className="flex flex-col pb-4">
+                    <h2 className="text-xl font-bold">{item.title}</h2>
+                    <div className="flex items-center justify-center gap-x-2 md:justify-start">
+                      <span className="flex-1 text-sm font-medium italic sm:flex-none">{item.location}</span>
+                      <span>•</span>
+                      <span className="flex-1 text-sm sm:flex-none">{item.date}</span>
+                    </div>
+                  </div>
+                  {item.content}
                 </div>
-              </div>
-              {item.content}
-            </div>
-          ))}</div>
+              ))
+            }
+          </div>
         </div>
       </div>
     </section>
