@@ -1,6 +1,6 @@
 import { ChevronUpIcon } from '@heroicons/react/24/solid';
+import SocialIcons from './Icon/SocialIcons';
 
-import { contacts } from "../data/data";
 
 const currentYear = new Date().getFullYear();
 
@@ -16,23 +16,7 @@ const Footer = () => {
                     </a>
                 </div>
                 <div className="flex flex-col items-center gap-y-6">
-                    <div className="flex gap-x-4 text-neutral-500">
-                        {contacts.map(({ type, href, Icon }) => {
-                            return (
-                                <div key={type}>
-                                    <dt className="sr-only">{type}</dt>
-                                    <dd className="flex items-center">
-                                        <a
-                                            className=
-                                            '-m-2 flex rounded-md p-2 hover:text-sky-300'
-                                            href={href}>
-                                            <Icon />
-                                        </a>
-                                    </dd>
-                                </div>
-                            );
-                        })}
-                    </div>
+                    <SocialIcons />
                     <span className="text-sm text-neutral-700">© Copyright {currentYear} Burhan Köseler</span>
                 </div>
             </div>

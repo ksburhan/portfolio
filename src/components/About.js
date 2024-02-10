@@ -1,8 +1,9 @@
 import React from "react";
 
-import { about, contacts } from "../data/data";
+import { about } from "../data/data";
 import Skills from "./Skills";
 import './About.scss';
+import SocialIcons from "./Icon/SocialIcons";
 
 const About = () => {
   return (
@@ -16,23 +17,7 @@ const About = () => {
           <p className="mb-4 leading-relaxed">
             {about.about}
           </p>
-          <div className="flex gap-x-4 ">
-            {contacts.map(({ type, href, Icon }) => {
-              return (
-                <div key={type}>
-                  <dt className="sr-only">{type}</dt>
-                  <dd className="flex items-center">
-                    <a
-                      className=
-                      '-m-2 flex rounded-md p-2 hover:text-sky-300'
-                      href={href}>
-                      <Icon />
-                    </a>
-                  </dd>
-                </div>
-              );
-            })}
-          </div>
+          <SocialIcons />
         </div>
         <div className="hero-img lg:max-w-lg lg:w-full md:w-1/2 w-5/6"></div>
         <Skills />
