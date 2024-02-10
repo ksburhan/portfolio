@@ -1,7 +1,6 @@
-import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
 import React from "react";
 
-import { about } from "../data/data";
+import { about, contacts } from "../data/data";
 import Skills from "./Skills";
 import './About.scss';
 
@@ -17,25 +16,22 @@ const About = () => {
           <p className="mb-4 leading-relaxed">
             {about.about}
           </p>
-          <div className="flex justify-center">
-            <a
-              className="pr-1"
-              aria-label="linkedin"
-              rel="noreferrer"
-              target="_blank"
-              href="https://www.linkedin.com/in/burhan-k%C3%B6seler-2b4130235/"
-            >
-              <IconBrandLinkedin width={32} height={32} />
-            </a>
-            <a
-              className="pl-1"
-              aria-label="github"
-              rel="noreferrer"
-              target="_blank"
-              href="https://github.com/ksburhan"
-            >
-              <IconBrandGithub width={32} height={32} />
-            </a>
+          <div className="flex gap-x-4 ">
+            {contacts.map(({ type, href, Icon }) => {
+              return (
+                <div key={type}>
+                  <dt className="sr-only">{type}</dt>
+                  <dd className="flex items-center">
+                    <a
+                      className=
+                      '-m-2 flex rounded-md p-2 hover:text-sky-300'
+                      href={href}>
+                      <Icon />
+                    </a>
+                  </dd>
+                </div>
+              );
+            })}
           </div>
         </div>
         <div className="hero-img lg:max-w-lg lg:w-full md:w-1/2 w-5/6"></div>

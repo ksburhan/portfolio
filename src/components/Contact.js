@@ -86,7 +86,7 @@ const Contact = () => {
               <p className="prose leading-6">Feel free to send me a mail or contact me over these socials!</p>
               <dl className="flex flex-col space-y-4 text-base sm:space-y-2">
 
-                {contacts.map(({ type, text, href }) => {
+                {contacts.map(({ type, text, href, Icon }) => {
                   return (
                     <div key={type}>
                       <dt className="sr-only">{type}</dt>
@@ -95,7 +95,7 @@ const Contact = () => {
                           className=
                           '-m-2 flex rounded-md p-2 hover:text-sky-300'
                           href={href}>
-                          {/* <Icon aria-hidden="true" className="h-4 w-4 flex-shrink-0 text-neutral-100 sm:h-5 sm:w-5" /> */}
+                          <Icon />
                           <span className="ml-3 text-sm sm:text-base">{text}</span>
                         </a>
                       </dd>
