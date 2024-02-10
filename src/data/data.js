@@ -1,3 +1,9 @@
+import EmailIcon from "../components/Icon/EmailIcon";
+import GithubIcon from "../components/Icon/GithubIcon";
+import InstagramIcon from "../components/Icon/InstagramIcon";
+import LinkedInIcon from "../components/Icon/LinkedInIcon";
+import LocationIcon from "../components/Icon/LocationIcon";
+
 export const about = {
   header: "Hi, I'm Burhan Köseler.",
   description: "A passionate Full-Stack Engineer based in Japan. 📍",
@@ -113,25 +119,30 @@ export const contacts = [
     type: 'Email',
     text: 'burhan.koeseler@hotmail.de',
     href: 'mailto:burhan.koeseler@hotmail.de',
+    Icon: EmailIcon,
   },
   {
     type: 'Location',
     text: 'Osaka, Japan',
     href: 'https://maps.app.goo.gl/TyTzqfde5sS4HiLZA',
+    Icon: LocationIcon,
   },
   {
     type: 'Instagram',
     text: '@ks_burhan',
     href: 'https://www.instagram.com/ks_burhan/',
+    Icon: InstagramIcon,
   },
   {
     type: 'LinkedIn',
     text: 'Burhan Köseler',
     href: 'https://www.linkedin.com/in/burhan-k%C3%B6seler-2b4130235/',
+    Icon: LinkedInIcon,
   },
   {
     type: 'Github',
     text: 'ksburhan',
     href: 'https://github.com/ksburhan',
+    Icon: GithubIcon,
   },
 ]
