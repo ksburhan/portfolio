@@ -29,7 +29,11 @@ const Resume = () => {
                         <span className="flex-1 text-sm sm:flex-none">{item.date}</span>
                       </div>
                     </div>
-                    {item.content}
+                    <ul className="list-disc">
+                      {item.content.map((el) => (
+                        <li>{el}</li>
+                      ))}
+                    </ul>
                   </div>
                 ))
               }
@@ -54,7 +58,11 @@ const Resume = () => {
                         <span className="flex-1 text-sm sm:flex-none">{item.date}</span>
                       </div>
                     </div>
-                    {item.content}
+                    <ul className="list-disc">
+                      {item.content.map((el) => (
+                        <li>{el}</li>
+                      ))}
+                    </ul>
                   </div>
                 ))
               }
