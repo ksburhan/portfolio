@@ -7,7 +7,9 @@ import LocationIcon from "../components/Icon/LocationIcon";
 export const about = {
   header: "Hi, I'm Burhan Köseler.",
   description: "A passionate Full-Stack Engineer based in Japan. 📍",
-  about: "Hey, my name is Burhan, and I'm a Full-Stack Developer. My passion is to create and develop clean Services with clean Websites for my users.\n My main stack currently is React/Next.js in combination with Tailwind CSS and TypeScript.",
+  about: "Hey, my name is Burhan, and I'm Software Developer. " +
+    "My passion is to create and develop clean Services and clean Websites for my users. " +
+    "My main stack currently is React/Next.js in combination with Tailwind CSS and TypeScript.",
 }
 
 export const education = [
@@ -15,13 +17,19 @@ export const education = [
     date: 'March 2018 - February 2022',
     location: 'OTH Regensburg, Germany',
     title: 'Bachelor of Science in Computer Science',
-    content: "Courses in Computer Graphics, AI, Software Engineering and Software Architecture Design. Bachelors Thesis: Framework for AI creation and comparing different AI algorithms.",
+    content: [
+      "Courses in Computer Graphics, AI, Software Engineering and Software Architecture Design. " +
+      "Bachelors Thesis: Framework for AI creation and comparing different AI algorithms.",
+    ]
   },
   {
     date: 'September 2015 - July 2017',
     location: 'Technik FOS Munich, Germany',
     title: 'Technical High School Graduation',
-    content: "High school classes in addition to 10 week internship in electronic technologies and 10 week internship in metal technologies.",
+    content: [
+      "High school classes in addition to 10 week internship in electronic technologies and" +
+      " 10 week internship in metal technologies.",
+    ]
   },
 ];
 
@@ -30,40 +38,27 @@ export const work = [
     date: 'July 2022 - October 2023',
     location: 'Xibix Solutions GmbH, Munich, Germany',
     title: 'Junior Software Engineer',
-    content: (
-      <>
-        <ul>
-          <li>Teammember of a Microservice Web development Project using Java (Quarkus), Angular, NGRX</li>
-          <li>Fullstack Development of a car messaging Service</li>
-        </ul>
-        <ul>
-          <li>Ownership of a monolithic Web development Project using Angular, NodeJS, RXJS and TypeOrm</li>
-          <li>Fullstack Development of a media management Website implementing new features as well
-            as refactoring old code to improve performance</li>
-          <li>Committed code to GIT and deployed updates on the Microsoft Azure Cloud</li>
-          <li>Analyzed user needs and proposed solutions to meet them</li>
-          <li>Communicated regularly with Product Owners of the BMW Group</li>
-        </ul>
-      </>
-    ),
+    content: [
+      "Teammember of a Microservice Web development Project using Java (Quarkus), Angular, NGRX",
+      "Fullstack Development of a car messaging Service",
+      "Ownership of a monolithic Web development Project using Angular, NodeJS, RXJS and TypeOrm",
+      "Fullstack Development of a media management Website implementing new features as well as refactoring old code to improve performance",
+      "Committed code to GIT and deployed updates on the Microsoft Azure Cloud",
+      "Analyzed user needs and proposed solutions to meet them",
+      "Communicated regularly with Product Owners of the BMW Group",
+    ]
   },
   {
     date: 'March 2020 - August 2020',
     location: 'CipSoft GmbH, Regensburg, Germany',
     title: 'Internship',
-    content: (
-      <>
-        <ul>
-          <li>Ownership of project "visualize relationships between game content".</li>
-          <li>Researched and prepared documentation about bulk importing into Neo4j database.</li>
-          <li>Wrote clear, clean code to export game content and their relationships. Created plugin for
-            game designers to use database without query knowledge.</li>
-          <li>Wrote scripts and configured Jenkins for automating the process.</li>
-          <li>Collaborated effectively with members of software development team and personnel in other
-            departments.</li>
-        </ul>
-      </>
-    ),
+    content: [
+      "Ownership of project \"visualize relationships between game content\"",
+      "Researched and prepared documentation about bulk importing into Neo4j database",
+      "Wrote clear, clean code to export game content and their relationships. Created plugin for game designers to use database without query knowledge",
+      "Wrote scripts and configured Jenkins for automating the process",
+      "Collaborated effectively with members of software development team and personnel in other departments",
+    ]
   },
 ];
 
