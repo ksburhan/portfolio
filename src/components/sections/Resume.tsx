@@ -1,4 +1,4 @@
-import { education, work } from "../data/data";
+import { education, work } from "../../data/data";
 
 const Resume = () => {
   return (
@@ -30,8 +30,8 @@ const Resume = () => {
                       </div>
                     </div>
                     <ul className="list-disc">
-                      {item.content.map((el) => (
-                        <li>{el}</li>
+                      {item.content.map((el, i) => (
+                        <li key={i}>{el}</li>
                       ))}
                     </ul>
                   </div>
@@ -59,8 +59,8 @@ const Resume = () => {
                       </div>
                     </div>
                     <ul className="list-disc">
-                      {item.content.map((el) => (
-                        <li>{el}</li>
+                      {item.content.map((el, i) => (
+                        <li key={i}>{el}</li>
                       ))}
                     </ul>
                   </div>

@@ -1,7 +1,7 @@
 import { CpuChipIcon } from "@heroicons/react/24/solid";
 import React from "react";
 
-import { skills } from "../data/data";
+import { skills } from "../../data/data";
 
 const Skills = () => {
     return (

@@ -2,7 +2,7 @@ import React from "react";
 import { useCallback, useMemo, useState } from 'react';
 import { EnvelopeIcon } from "@heroicons/react/24/solid";
 
-import { contacts } from "../data/data";
+import { contacts } from "../../data/data";
 
 const Contact = () => {
   const defaultData = useMemo(
@@ -15,7 +15,7 @@ const Contact = () => {
   );
   const [data, setData] = useState(defaultData);
 
-  const onChange = useCallback((event) => {
+  const onChange = useCallback(<T extends HTMLInputElement | HTMLTextAreaElement>(event: React.ChangeEvent<T>) => {
     const { name, value } = event.target;
 
     const fieldData = { [name]: value };
@@ -25,7 +25,7 @@ const Contact = () => {
     [data],
   );
   const handleSendMessage = useCallback(
-    async (event) => {
+    async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
       /**
        * This is a good starting point to wire up your form submission logic
