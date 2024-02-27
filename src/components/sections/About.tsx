@@ -10,7 +10,7 @@ import Section from "../layout/Section";
 const About = () => {
   const { name, header, description, imageSrc } = about;
   return (
-    <Section className="bg-gray-100" sectionId={SectionId.About}>
+    <Section className="bg-gray-100 h-[calc(100vh-72px)]" sectionId={SectionId.About}>
       <div className={classNames('grid grid-cols-2 gap-y-4', { 'md:grid-cols-4': !!imageSrc })}>
         <div className={classNames('col-span-1 flex flex-col gap-y-6', { 'md:col-span-2': !!imageSrc })}>
           <div className="flex flex-col gap-y-2">
