@@ -3,6 +3,7 @@ import GithubIcon from "../components/Icon/GithubIcon";
 import InstagramIcon from "../components/Icon/InstagramIcon";
 import LinkedInIcon from "../components/Icon/LinkedInIcon";
 import LocationIcon from "../components/Icon/LocationIcon";
+import heroPicture from "../images/heroPicture.jpg";
 import { About, ContactItem, Metadata, ProjectItem, Skill, TestimonialItem, TimelineItem } from "./dataDef";
 
 export const metadata: Metadata = {
@@ -16,7 +17,7 @@ export const about: About = {
   description: "Hey, my name is Burhan, and I'm Software Developer. " +
     "My passion is to create and develop clean Services and clean Websites for my users. " +
     "My main stack currently is React/Next.js in combination with Tailwind CSS and TypeScript.",
-  imageSrc: "../../public/hero.jpeg"
+  imageSrc: heroPicture,
 }
 
 export const education: TimelineItem[] = [
@@ -154,3 +155,5 @@ export const SectionId = {
   Skills: 'skills',
   Testimonials: 'testimonials',
 } as const;
+
+export type SectionId = (typeof SectionId)[keyof typeof SectionId];
