@@ -4,7 +4,7 @@ import Contact from "../components/sections/Contact";
 import Footer from "../components/sections/Footer";
 import Navbar from "../components/sections/Navbar";
 import Projects from "../components/sections/Projects";
-import Resume from "../components/sections/Resume";
+import Resume from "../components/sections/Resume/Resume";
 import Testimonials from "../components/sections/Testimonials"
 import { metadata } from "../data/data";
 import Page from "../components/layout/Page";
