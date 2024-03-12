@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 }
 
 export const about: About = {
-  name: "Hi, I'm Burhan Köseler.",
+  name: "Hi, I'm Burhan Köseler. ",
   header: "A passionate Full-Stack Engineer based in Japan. 📍",
   description: "Hey, my name is Burhan, and I'm Software Developer. " +
     "My passion is to create and develop clean Services and clean Websites for my users. " +
