@@ -38,7 +38,7 @@ const Contact = () => {
     'bg-neutral-500 pl-2 border-0 rounded-md placeholder:text-neutral-400 placeholder:text-md text-neutral-200 text-md resize-none';
 
   return (
-    <section id="contact" className="px-4 py-16 md:py-24 lg:px-8">
+    <section id="contact" className="px-4 py-16 md:py-24 lg:px-8 bg-gray-100">
       <div className='mx-auto max-w-screen-lg'>
         <div className="flex flex-col gap-y-6">
           <div className="flex flex-col gap-6 md:flex-row md:items-center">

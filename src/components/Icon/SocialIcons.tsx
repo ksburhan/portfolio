@@ -2,7 +2,7 @@ import { contacts } from "../../data/data";
 
 const SocialIcons = () => {
     return (
-        <div className="flex gap-x-4 ">
+        <div className="flex gap-x-4 place-content-center md:place-content-start">
             {contacts.map(({ type, href, Icon }) => {
                 return (
                     <div key={type}>

@@ -4,7 +4,7 @@ import Section from "../../layout/Section";
 const Resume = () => {
     return (
         <Section sectionId={SectionId.Resume} className="body-font bg-gray-100">
-            <div className="container text-center lg:px-40">
+            <div className="container text-center">
                 <div className="flex flex-col w-full mb-8">
                     <h1 className="sm:text-4xl text-3xl font-medium title-font">
                         Resume
@@ -30,7 +30,7 @@ const Resume = () => {
                                                 <span className="flex-1 text-sm sm:flex-none">{item.date}</span>
                                             </div>
                                         </div>
-                                        <ul className="list-disc">
+                                        <ul className="md:list-disc sm:list-none">
                                             {item.content.map((el, i) => (
                                                 <li key={i}>{el}</li>
                                             ))}
@@ -59,7 +59,7 @@ const Resume = () => {
                                                 <span className="flex-1 text-sm sm:flex-none">{item.date}</span>
                                             </div>
                                         </div>
-                                        <ul className="list-disc">
+                                        <ul className="md:list-disc sm:list-none">
                                             {item.content.map((el, i) => (
                                                 <li key={i}>{el}</li>
                                             ))}
