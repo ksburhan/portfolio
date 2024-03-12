@@ -11,10 +11,10 @@ const Testimonials = () => {
   if (testimonials.length > 0) {
     content = <div className="flex flex-wrap m-4">
       {testimonials.map((testimonial) => (
-        <div key={testimonial.id} className="p-4 md:w-1/2 w-full">
+        <div key={testimonial.name} className="p-4 md:w-1/2 w-full">
           <div className="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
             <CommandLineIcon className="block w-8 text-gray-500 mb-4" />
-            <p className="leading-relaxed mb-6">{testimonial.quote}</p>
+            <p className="leading-relaxed mb-6">{testimonial.text}</p>
             <div className="inline-flex items-center">
               <img
                 alt="testimonial"
@@ -26,7 +26,7 @@ const Testimonials = () => {
                   {testimonial.name}
                 </span>
                 <span className="text-gray-500 text-sm uppercase">
-                  {testimonial.company}
+                  {testimonial.name}
                 </span>
               </span>
             </div>

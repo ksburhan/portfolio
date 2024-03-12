@@ -10,7 +10,7 @@ const About = () => {
   const { name, header, description, imageSrc } = about;
   return (
     <Section className="bg-gray-100 sm:h-[calc(100vh-72px)]" sectionId={SectionId.About}>
-      <div className={'md:py-28 flex flex-col-reverse md:grid md:grid-cols-3'}>
+      <div className={'md:py-12 flex flex-col-reverse md:grid md:grid-cols-3'}>
         <div className={'text-center md:text-left md:pr-12 col-span-1 flex flex-col md:col-span-2'}>
           <div className="flex flex-col">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-bold">
