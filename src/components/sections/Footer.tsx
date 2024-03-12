@@ -1,5 +1,5 @@
 import { ChevronUpIcon } from '@heroicons/react/24/solid';
-import SocialIcons from './Icon/SocialIcons';
+import SocialIcons from '../Icon/SocialIcons';
 
 
 const currentYear = new Date().getFullYear();
@@ -24,5 +24,4 @@ const Footer = () => {
     )
 };
 
-Footer.displayName = 'Footer';
 export default Footer;

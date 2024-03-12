@@ -3,16 +3,24 @@ import GithubIcon from "../components/Icon/GithubIcon";
 import InstagramIcon from "../components/Icon/InstagramIcon";
 import LinkedInIcon from "../components/Icon/LinkedInIcon";
 import LocationIcon from "../components/Icon/LocationIcon";
+import heroPicture from "../images/heroPicture.jpg";
+import { About, ContactItem, Metadata, ProjectItem, Skill, TestimonialItem, TimelineItem } from "./dataDef";
 
-export const about = {
-  header: "Hi, I'm Burhan Köseler.",
-  description: "A passionate Full-Stack Engineer based in Japan. 📍",
-  about: "Hey, my name is Burhan, and I'm Software Developer. " +
-    "My passion is to create and develop clean Services and clean Websites for my users. " +
-    "My main stack currently is React/Next.js in combination with Tailwind CSS and TypeScript.",
+export const metadata: Metadata = {
+  title: "Burhan Köseler",
+  description: "Portfolio page for Burhan Köseler",
 }
 
-export const education = [
+export const about: About = {
+  name: "Hi, I'm Burhan Köseler. ",
+  header: "A passionate Full-Stack Engineer based in Japan. 📍",
+  description: "Hey, my name is Burhan, and I'm Software Developer. " +
+    "My passion is to create and develop clean Services and clean Websites for my users. " +
+    "My main stack currently is React/Next.js in combination with Tailwind CSS and TypeScript.",
+  imageSrc: heroPicture,
+}
+
+export const education: TimelineItem[] = [
   {
     date: 'March 2018 - February 2022',
     location: 'OTH Regensburg, Germany',
@@ -33,7 +41,7 @@ export const education = [
   },
 ];
 
-export const work = [
+export const work: TimelineItem[] = [
   {
     date: 'July 2022 - October 2023',
     location: 'Xibix Solutions GmbH, Munich, Germany',
@@ -62,17 +70,16 @@ export const work = [
   },
 ];
 
-export const projects = [
+export const projects: ProjectItem[] = [
   // {
-  //   link: "https://fliegengitterworld.de",
+  //   url: "https://fliegengitterworld.de",
   //   image: "https://preview.redd.it/minish-cap-toon-link-mod-is-now-in-development-v0-iogndtlilk6c1.png?width=830&format=png&auto=webp&s=7a2b3044b4713620fdc099b250d3b8f39b96b503",
-  //   subtitle: "Fliegengitter World",
+  //   title: "Fliegengitter World",
   //   description: "Homepage for local businuess in Augsburg, Germany.",
-  //   id: 1,
   // },
 ];
 
-export const skills = [
+export const skills: Skill[] = [
   {
     img: "https://skillicons.dev/icons?i=html,css",
     id: 1,
@@ -99,17 +106,15 @@ export const skills = [
   },
 ];
 
-export const testimonials = [
+export const testimonials: TestimonialItem[] = [
   // {
-  //   quote: "great service",
   //   image: "https://preview.redd.it/minish-cap-toon-link-mod-is-now-in-development-v0-iogndtlilk6c1.png?width=830&format=png&auto=webp&s=7a2b3044b4713620fdc099b250d3b8f39b96b503",
-  //   name: "Oktay Sucu",
-  //   company: "Fliegengitter World",
-  //   id: 1,
+  //   text: "great service",
+  //   name: "Fliegengitter World",
   // },
 ];
 
-export const contacts = [
+export const contacts: ContactItem[] = [
   {
     type: 'Email',
     text: 'burhan.koeseler@hotmail.de',
@@ -141,3 +146,14 @@ export const contacts = [
     Icon: GithubIcon,
   },
 ]
+
+export const SectionId = {
+  About: 'about',
+  Contact: 'contact',
+  Projects: 'projects',
+  Resume: 'resume',
+  Skills: 'skills',
+  Testimonials: 'testimonials',
+} as const;
+
+export type SectionId = (typeof SectionId)[keyof typeof SectionId];
