@@ -5,7 +5,7 @@ import { skills } from "../../data/data";
 
 const Skills = () => {
     return (
-        <div className="container max-w-7xl mx-auto">
+        <div className="container max-w-7xl pt-8 mx-auto">
             <div className="text-center mb-12">
                 <CpuChipIcon className="w-10 inline-block mb-4" />
                 <h1 className="md:text-4xl text-3xl font-medium title-font mb-4">
