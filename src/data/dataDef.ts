@@ -5,6 +5,11 @@ export interface Metadata {
   description: string;
 }
 
+export interface NavbarItem {
+  name: string;
+  href: string;
+}
+
 export interface About {
   imageSrc: string;
   header: string;

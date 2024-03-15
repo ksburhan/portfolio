@@ -4,12 +4,20 @@ import InstagramIcon from "../components/Icon/InstagramIcon";
 import LinkedInIcon from "../components/Icon/LinkedInIcon";
 import LocationIcon from "../components/Icon/LocationIcon";
 import heroPicture from "../images/heroPicture.jpg";
-import { About, ContactItem, Metadata, ProjectItem, Skill, TestimonialItem, TimelineItem } from "./dataDef";
+import { About, ContactItem, Metadata, NavbarItem, ProjectItem, Skill, TestimonialItem, TimelineItem } from "./dataDef";
 
 export const metadata: Metadata = {
   title: "Burhan Köseler",
   description: "Portfolio page for Burhan Köseler",
 }
+
+export const navbarItems: NavbarItem[] = [
+  { name: "About", href: "#about" },
+  { name: "Projects", href: "#projects" },
+  { name: "Resume", href: "#resume" },
+  { name: "Reviews", href: "#reviews" },
+  { name: "Contact", href: "#contact" },
+]
 
 export const about: About = {
   name: "Hi, I'm Burhan Köseler. ",
