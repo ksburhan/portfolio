@@ -15,7 +15,7 @@ export const navbarItems: NavbarItem[] = [
   { name: "About", href: "#about" },
   { name: "Projects", href: "#projects" },
   { name: "Resume", href: "#resume" },
-  { name: "Reviews", href: "#reviews" },
+  { name: "Reviews", href: "#testimonials" },
   { name: "Contact", href: "#contact" },
 ]
 
