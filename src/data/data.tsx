@@ -51,6 +51,14 @@ export const education: TimelineItem[] = [
 
 export const work: TimelineItem[] = [
   {
+    date: 'March 2024 - present',
+    location: 'Soft Gear CO., Ltd., Tokyo/Osaka, Japan',
+    title: 'Game Server Engineer',
+    content: [
+      "Teammember of a R&D Team for creating the server side for online games using Kotlin / NodeJS",
+    ]
+  },
+  {
     date: 'July 2022 - October 2023',
     location: 'Xibix Solutions GmbH, Munich, Germany',
     title: 'Junior Software Engineer',
