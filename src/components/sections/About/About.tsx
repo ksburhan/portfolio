@@ -1,16 +1,16 @@
 import React from "react";
 import Image from 'next/image';
 
-import { SectionId, about } from "../../data/data";
+import { SectionId, about } from "../../../data/data";
 import Skills from "./Skills";
-import SocialIcons from "../Icon/SocialIcons";
-import Section from "../layout/Section";
+import SocialIcons from "../../Icon/SocialIcons";
+import Section from "../../layout/Section";
 
 const About = () => {
   const { name, header, description, imageSrc } = about;
   return (
-    <Section className="bg-gray-100" sectionId={SectionId.About}>
-      <div className={'md:py-12 flex flex-col-reverse md:grid md:grid-cols-3'}>
+    <Section sectionId={SectionId.About} className="bg-gray-100">
+      <div className={'md:py-24 flex flex-col-reverse md:grid md:grid-cols-3'}>
         <div className={'text-center md:text-left md:pr-12 col-span-1 flex flex-col md:col-span-2'}>
           <div className="flex flex-col">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-bold">

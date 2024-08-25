@@ -1,5 +1,5 @@
 import { FC, memo } from "react";
-import About from "../components/sections/About";
+import About from "../components/sections/About/About";
 import Contact from "../components/sections/Contact";
 import Footer from "../components/sections/Footer";
 import Navbar from "../components/sections/Navbar/Navbar";

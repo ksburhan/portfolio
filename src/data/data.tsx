@@ -55,7 +55,11 @@ export const work: TimelineItem[] = [
     location: 'Soft Gear CO., Ltd., Tokyo/Osaka, Japan',
     title: 'Game Server Engineer',
     content: [
-      "Teammember of a R&D Team for creating the server side for online games using Kotlin / NodeJS",
+      "Teammember of a R&D Team developing game servers for a real time action game",
+      "Created design documents according to clients specificiations",
+      "Communicated regularly with the client/interface partner",
+      "Lead the design and implementation of a reliable matchmaker that matches the clients criteria",
+      "Ownership of the web API component that communicates with the game client and saves players account information and game histories"
     ]
   },
   {
@@ -75,7 +79,7 @@ export const work: TimelineItem[] = [
   {
     date: 'March 2020 - August 2020',
     location: 'CipSoft GmbH, Regensburg, Germany',
-    title: 'Internship',
+    title: 'Intern',
     content: [
       "Ownership of project \"visualize relationships between game content\"",
       "Researched and prepared documentation about bulk importing into Neo4j database",
