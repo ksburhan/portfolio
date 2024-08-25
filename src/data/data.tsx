@@ -7,7 +7,7 @@ import heroPicture from "../images/heroPicture.jpg";
 import { About, ContactItem, Metadata, NavbarItem, ProjectItem, Skill, TestimonialItem, TimelineItem } from "./dataDef";
 
 export const metadata: Metadata = {
-  title: "Burhan Köseler",
+  title: "ksburhan",
   description: "Portfolio page for Burhan Köseler",
 }
 
