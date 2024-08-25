@@ -9,7 +9,7 @@ import Section from "../../layout/Section";
 const About = () => {
   const { name, header, description, imageSrc } = about;
   return (
-    <Section sectionId={SectionId.About} className="bg-gray-100 h-[calc(100vh-72px)]">
+    <Section sectionId={SectionId.About} className="bg-gray-100 md:h-[calc(100vh-72px)]">
       <div className={'md:py-24 flex flex-col-reverse md:grid md:grid-cols-3'}>
         <div className={'text-center md:text-left md:pr-12 col-span-1 flex flex-col md:col-span-2'}>
           <div className="flex flex-col">
