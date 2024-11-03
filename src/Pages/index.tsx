@@ -3,9 +3,9 @@ import About from "../components/sections/About/About";
 import Contact from "../components/sections/Contact";
 import Footer from "../components/sections/Footer";
 import Navbar from "../components/sections/Navbar/Navbar";
-import Projects from "../components/sections/Projects";
+import Projects from "../components/sections/Projects/Projects";
 import Resume from "../components/sections/Resume/Resume";
-import Testimonials from "../components/sections/Testimonials"
+import Testimonials from "../components/sections/Testimonials/Testimonials"
 import { metadata } from "../data/data";
 import Page from "../components/layout/Page";
 
