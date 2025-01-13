@@ -15,16 +15,18 @@ export const navbarItems: NavbarItem[] = [
   { name: "About", href: "#about" },
   { name: "Projects", href: "#projects" },
   { name: "Resume", href: "#resume" },
-  { name: "Reviews", href: "#testimonials" },
-  { name: "Contact", href: "#contact" },
+  // { name: "Reviews", href: "#testimonials" },
+  // { name: "Contact", href: "#contact" },
 ]
 
 export const about: About = {
   name: "Hi, I'm Burhan Köseler. ",
-  header: "A passionate Full-Stack Engineer based in Japan. 📍",
-  description: "Hey, my name is Burhan, and I'm Software Developer. " +
+  header: "A passionate Software Engineer based in Japan 📍",
+  description: "Hey, my name is Burhan, and I'm a Software Engineer. \n" +
     "My passion is to create and develop clean Services and clean Websites for my users. " +
-    "My main stack currently is React/Next.js in combination with Tailwind CSS and TypeScript.",
+    "I have worked in the automotive industry as well as the game industry, " +
+    "working on microservices for web applications and various server applications, mainly in Java or Kotlin. \n" +
+    "I speak fluent German, English, Turkish and Japanese. ",
   imageSrc: heroPicture,
 }
 
@@ -58,8 +60,9 @@ export const work: TimelineItem[] = [
       "Teammember of a R&D Team developing game servers for a real time action game",
       "Created design documents according to clients specificiations",
       "Communicated regularly with the client/interface partner",
-      "Lead the design and implementation of a reliable matchmaker that matches the clients criteria",
-      "Ownership of the web API component that communicates with the game client and saves players account information and game histories"
+      "Lead the design and implementation of a reliable matchmaker that matches the clients together based on certain criteria",
+      "Ownership of the web API component that handles account information and communicates with the game client and game servers",
+      "Responsible for the AWS infrastructure the servers are deployed on during development."
     ]
   },
   {
@@ -95,40 +98,46 @@ export const projects: ProjectItem[] = [
     url: "http://www.monkey-ticket.site",
     image: "https://preview.redd.it/minish-cap-toon-link-mod-is-now-in-development-v0-iogndtlilk6c1.png?width=830&format=png&auto=webp&s=7a2b3044b4713620fdc099b250d3b8f39b96b503",
     title: "Monkey Ticket",
-    description: "Web service for reselling tickets using micro services. Built on React and NodeJS with event based communication between the microservices. Deployed with Kubernetes",
-  },
-  {
-    url: "http://www.monkey-ticket.site",
-    image: "https://preview.redd.it/minish-cap-toon-link-mod-is-now-in-development-v0-iogndtlilk6c1.png?width=830&format=png&auto=webp&s=7a2b3044b4713620fdc099b250d3b8f39b96b503",
-    title: "Monkey Ticket",
-    description: "Web service for reselling tickets using micro services. Built on React and NodeJS with event based communication between the microservices. Deployed with Kubernetes",
+    description: "Web service for reselling tickets using micro services. Built on React and NodeJS with event based communication between the microservices. Deployed with Kubernetes on DigitalOcean",
   },
 ];
 
 export const skills: Skill[] = [
   {
-    img: "https://skillicons.dev/icons?i=html,css",
+    img: "https://skillicons.dev/icons?i=java,kotlin",
     id: 1,
   },
   {
-    img: "https://skillicons.dev/icons?i=js,ts",
+    img: "https://skillicons.dev/icons?i=html,css",
     id: 2,
   },
   {
-    img: "https://skillicons.dev/icons?i=react,next",
+    img: "https://skillicons.dev/icons?i=js,ts",
     id: 3,
   },
   {
-    img: "https://skillicons.dev/icons?i=tailwind,scss",
+    img: "https://skillicons.dev/icons?i=react,next",
     id: 4,
   },
   {
-    img: "https://skillicons.dev/icons?i=docker,kubernetes",
+    img: "https://skillicons.dev/icons?i=tailwind,scss",
     id: 5,
   },
   {
-    img: "https://skillicons.dev/icons?i=java,nodejs",
+    img: "https://skillicons.dev/icons?i=docker,kubernetes",
     id: 6,
+  },
+  {
+    img: "https://skillicons.dev/icons?i=aws,azure",
+    id: 7,
+  },
+  {
+    img: "https://skillicons.dev/icons?i=postgres,mysql",
+    id: 8,
+  },
+  {
+    img: "https://skillicons.dev/icons?i=spring,godot",
+    id: 9,
   },
 ];
 
