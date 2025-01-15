@@ -1,28 +1,25 @@
-import { CodeBracketIcon } from "@heroicons/react/24/solid";
-import React from "react";
+import { ArrowTopRightOnSquareIcon, CodeBracketIcon } from "@heroicons/react/24/solid";
+import React, { FC, memo, useRef } from "react";
 import { projects, SectionId } from "../../../data/data";
+import Image from 'next/image';
 import Section from "../../layout/Section";
+import { ProjectItem } from "../../../data/dataDef";
 
 const Projects = () => {
-  let content = <div className="flex flex-wrap -m-4">
-    {projects.map((project) => (
-      <a
-        href={project.url}
-        key={project.title}
-        className="sm:w-1/2 w-100 p-4">
-        <div className="flex relative">
-          <div className="px-8 py-10 relative w-full border-4 border-gray-800 rounded-lg">
-            <h1 className="title-font text-lg font-medium text-black mb-3">
-              {project.title}
-            </h1>
-            <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
-              {project.description}
-            </h2>
+  let content =
+    <div className=" w-full columns-2 md:columns-3 lg:columns-4">
+      {projects.map((item, index) => {
+        const { title, image } = item;
+        return (
+          <div className="pb-6" key={`${title}-${index}`}>
+            <div className='relative h-max w-full overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl'>
+              <Image alt={title} width={50} height={50} className="h-full w-full" src={image ? image : ""} />
+              <ItemOverlay item={item} />
+            </div>
           </div>
-        </div>
-      </a>
-    ))}
-  </div>;
+        );
+      })}
+    </div>;
 
   return (
     <Section sectionId={SectionId.Projects} className="body-font bg-white">
@@ -38,3 +35,22 @@ const Projects = () => {
 }
 
 export default Projects;
+
+const ItemOverlay: FC<{ item: ProjectItem }> = memo(({ item: { url, title, description } }) => {
+  const linkRef = useRef<HTMLAnchorElement>(null);
+  return (
+    <a
+      className='absolute inset-0 h-full w-full  bg-gray-900 transition-all duration-300 opacity-0 hover:opacity-80'
+      href={url}
+      ref={linkRef}
+      target="_blank">
+      <div className="relative h-full w-full p-4">
+        <div className="flex h-full w-full flex-col gap-y-2 overflow-y-auto overscroll-contain">
+          <h2 className="text-center font-bold text-white opacity-100">{title}</h2>
+          <p className="text-xs text-white opacity-100 sm:text-sm">{description}</p>
+        </div>
+        <ArrowTopRightOnSquareIcon className="absolute bottom-1 right-1 h-4 w-4 shrink-0 text-white sm:bottom-2 sm:right-2" />
+      </div>
+    </a>
+  );
+});

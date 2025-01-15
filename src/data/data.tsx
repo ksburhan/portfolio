@@ -4,6 +4,7 @@ import InstagramIcon from "../components/Icon/InstagramIcon";
 import LinkedInIcon from "../components/Icon/LinkedInIcon";
 import LocationIcon from "../components/Icon/LocationIcon";
 import heroPicture from "../images/heroPicture.jpg";
+import monkeyTicketPicture from "../images/monkeyTickets.jpg";
 import { About, ContactItem, Metadata, NavbarItem, ProjectItem, Skill, TestimonialItem, TimelineItem } from "./dataDef";
 
 export const metadata: Metadata = {
@@ -96,8 +97,8 @@ export const work: TimelineItem[] = [
 export const projects: ProjectItem[] = [
   {
     url: "http://www.monkey-ticket.site",
-    image: "https://preview.redd.it/minish-cap-toon-link-mod-is-now-in-development-v0-iogndtlilk6c1.png?width=830&format=png&auto=webp&s=7a2b3044b4713620fdc099b250d3b8f39b96b503",
-    title: "Monkey Ticket",
+    image: monkeyTicketPicture,
+    title: "[CURRENTLY OFFLINE] Monkey Ticket",
     description: "Web service for reselling tickets using micro services. Built on React and NodeJS with event based communication between the microservices. Deployed with Kubernetes on DigitalOcean",
   },
 ];
