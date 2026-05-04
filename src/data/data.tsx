@@ -9,7 +9,7 @@ import { About, ContactItem, Metadata, NavbarItem, ProjectItem, Skill, Testimoni
 
 export const metadata: Metadata = {
   title: "ksburhan",
-  description: "Portfolio page for Burhan Köseler",
+  description: "Portfolio pages for Burhan Köseler",
 }
 
 export const navbarItems: NavbarItem[] = [
