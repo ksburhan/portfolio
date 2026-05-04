@@ -21,7 +21,7 @@ export const navbarItems: NavbarItem[] = [
 ]
 
 export const about: About = {
-  name: "Hi, I'm Burhan Köselers. ",
+  name: "Hi, I'm Burhan Köseler. ",
   header: "A passionate Software Engineer based in Japan 📍",
   description: "Hey, my name is Burhan, and I'm a Software Engineer. \n" +
     "My passion is to create and develop clean Services and clean Websites for my users. " +
