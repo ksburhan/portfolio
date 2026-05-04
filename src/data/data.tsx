@@ -8,7 +8,7 @@ import monkeyTicketPicture from "../images/monkeyTickets.jpg";
 import { About, ContactItem, Metadata, NavbarItem, ProjectItem, Skill, TestimonialItem, TimelineItem } from "./dataDef";
 
 export const metadata: Metadata = {
-  title: "ksburhans",
+  title: "ksburhan",
   description: "Portfolio page for Burhan Köseler",
 }
 
