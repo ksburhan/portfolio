@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import Hamburger from "./Hamburger";
 import classNames from "classnames";
-import { navbarItems } from "../../../data/data";
+import { navbarLinks } from "../../../data/data";
+import { useLanguage } from "../../../contexts/LanguageContext";
+import LanguagePicker from "./LanguagePicker";
 
 const Navbar = () => {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
+  const { t } = useLanguage();
 
   const toggleHamburger = () => {
     setHamburgerOpen(!hamburgerOpen);
@@ -17,12 +20,13 @@ const Navbar = () => {
           Burhan Köseler
         </a>
         <nav className="sm:mr-auto sm:ml-4 sm:py-1 sm:pl-4 sm:border-l sm:border-gray-700	flex flex-wrap items-center text-base justify-center">
-          {navbarItems.map((item) => (
-            <a key={item.name} href={item.href} className="mr-5 hover:text-sky-300">
-              {item.name}
+          {navbarLinks.map((item) => (
+            <a key={item.translationKey} href={item.href} className="mr-5 hover:text-sky-300">
+              {t.navbar[item.translationKey]}
             </a>
           ))}
         </nav>
+        <LanguagePicker className="mx-2" />
       </div>
       <div className="fixed right-2 top-2 rounded-lg bg-sky-300 p-2.5 m-2.5 z-10  md:hidden" onClick={toggleHamburger}>
         <Hamburger isOpen={hamburgerOpen} />

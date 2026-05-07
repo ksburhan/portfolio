@@ -1,13 +1,15 @@
 import React from "react";
 import Image from 'next/image';
 
-import { SectionId, about } from "../../../data/data";
+import { SectionId, heroImage } from "../../../data/data";
+import { useLanguage } from "../../../contexts/LanguageContext";
 import Skills from "./Skills";
 import SocialIcons from "../../Icon/SocialIcons";
 import Section from "../../layout/Section";
 
 const About = () => {
-  const { name, header, description, imageSrc } = about;
+  const { t } = useLanguage();
+  const { name, header, description } = t.about;
   return (
     <Section sectionId={SectionId.About} className="bg-gray-100 md:h-[calc(100vh-72px)]">
       <div className={'md:py-14 flex flex-col-reverse md:grid md:grid-cols-3'}>
@@ -21,10 +23,10 @@ const About = () => {
             <SocialIcons />
           </div>
         </div>
-        {!!imageSrc && (
+        {!!heroImage && (
           <div className="col-span-1 flex pb-2 justify-center md:justify-start">
             <div className="relative h-80 w-80 overflow-hidden">
-              <Image alt="about-me-image" className="hero-img h-full w-full object-cover" src={imageSrc} />
+              <Image alt="about-me-image" className="hero-img h-full w-full object-cover" src={heroImage} />
             </div>
           </div>
         )}

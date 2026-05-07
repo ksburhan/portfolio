@@ -1,10 +1,12 @@
 import { ChevronUpIcon } from '@heroicons/react/24/solid';
 import SocialIcons from '../Icon/SocialIcons';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 
 const currentYear = new Date().getFullYear();
 
 const Footer = () => {
+    const { t } = useLanguage();
     return (
         <section id="footer" className="body-font">
             <div className="relative bg-neutral-900 px-4 pb-6 pt-12 sm:px-8 sm:pb-8 sm:pt-14">
@@ -17,7 +19,7 @@ const Footer = () => {
                 </div>
                 <div className="flex flex-col items-center gap-y-6">
                     <SocialIcons />
-                    <span className="text-sm text-neutral-700">© Copyright {currentYear} Burhan Köseler</span>
+                    <span className="text-sm text-neutral-700">© {t.footer.copyright} {currentYear} Burhan Köseler</span>
                 </div>
             </div>
         </section>
