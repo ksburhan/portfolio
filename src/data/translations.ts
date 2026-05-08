@@ -3,13 +3,14 @@ export type Language = "en" | "de" | "tr" | "ja";
 export interface LanguageOption {
   code: Language;
   label: string;
+  flag: string;
 }
 
 export const languageOptions: LanguageOption[] = [
-  { code: "en", label: "English" },
-  { code: "de", label: "Deutsch" },
-  { code: "tr", label: "Türkçe" },
-  { code: "ja", label: "日本語" },
+  { code: "en", label: "EN", flag: "🇬🇧" },
+  { code: "de", label: "DE", flag: "🇩🇪" },
+  { code: "tr", label: "TR", flag: "🇹🇷" },
+  { code: "ja", label: "JP", flag: "🇯🇵" },
 ];
 
 export interface TimelineCopy {

@@ -28,7 +28,7 @@ const LanguagePicker: FC<LanguagePickerProps> = ({ className }) => {
         value={language}>
         {languageOptions.map((option) => (
           <option key={option.code} value={option.code}>
-            {option.label}
+            {option.flag} {option.label}
           </option>
         ))}
       </select>
