@@ -159,203 +159,302 @@ export const translations: Record<Language, Translation> = {
   },
   de: {
     navbar: {
-      about: "TODO: About",
-      projects: "TODO: Projects",
-      resume: "TODO: Resume",
-      languageLabel: "TODO: Language",
+      about: "About",
+      projects: "Projekte",
+      resume: "Lebenslauf",
+      languageLabel: "Sprache",
     },
     about: {
-      name: "TODO: about.name",
-      header: "TODO: about.header",
-      description: "TODO: about.description",
+      name: "Hey, ich bin Burhan Köseler. ",
+      header: "Ein Software Engineer mit Wohnsitz in Japan 📍",
+      description:
+        "Hey, mein Name ist Burhan und ich bin Software Engineer. \n" +
+        "Meine Leidenschaft ist es, saubere Services und saubere Websites für meine Nutzer zu entwerfen und zu entwickeln. " +
+        "Ich habe sowohl in der Automobilindustrie als auch in der Spieleindustrie gearbeitet " +
+        "und an Microservices für Webanwendungen sowie an verschiedenen Serveranwendungen mitgewirkt, hauptsächlich in Java oder Kotlin. \n" +
+        "Ich spreche fließend Deutsch, Englisch, Türkisch und Japanisch. ",
     },
     skills: {
-      title: "TODO: skills.title",
+      title: "Skills & Technologien",
     },
     projects: {
-      title: "TODO: projects.title",
+      title: "Projekte",
       items: [
         {
-          title: "TODO: projects.items[0].title",
-          description: "TODO: projects.items[0].description",
+          title: "[DERZEIT OFFLINE] Monkey Ticket",
+          description:
+            "Webservice zum Weiterverkauf von Tickets aufgebaut mit Microservices. Entwickelt mit React und NodeJS, mit event-based Kommunikation zwischen den Microservices. Bereitgestellt mit Kubernetes auf DigitalOcean.",
         },
       ],
     },
     resume: {
-      title: "TODO: resume.title",
-      workLabel: "TODO: resume.workLabel",
-      educationLabel: "TODO: resume.educationLabel",
+      title: "Lebenslauf",
+      workLabel: "Berufserfahrung",
+      educationLabel: "Ausbildung",
       work: [
         {
-          date: "TODO: work[0].date",
-          location: "TODO: work[0].location",
-          title: "TODO: work[0].title",
-          content: ["TODO: work[0].content[0]"],
+          date: "März 2024 - heute",
+          location: "Soft Gear CO., Ltd., Tokio/Osaka, Japan",
+          title: "Game Server Engineer",
+          content: [
+            "Mitglied eines R&D-Teams, das Spiele-Server für ein Echtzeit-Actionspiel entwickelt",
+            "Erstellung von Designdokumenten nach Kundenspezifikationen",
+            "Regelmäßige Kommunikation mit dem Kunden bzw. Schnittstellenpartner",
+            "Leitung des Designs und der Implementierung eines zuverlässigen Matchmakers, der Clients anhand bestimmter Kriterien zusammenführt",
+            "Verantwortlich für die Web-API-Komponente, die Account-Informationen verwaltet und mit dem Game-Client und den Game-Servern kommuniziert",
+            "Zuständig für die AWS-Infrastruktur, auf der die Server während der Entwicklung bereitgestellt werden.",
+          ],
         },
         {
-          date: "TODO: work[1].date",
-          location: "TODO: work[1].location",
-          title: "TODO: work[1].title",
-          content: ["TODO: work[1].content[0]"],
+          date: "Juli 2022 - Oktober 2023",
+          location: "Xibix Solutions GmbH, München, Deutschland",
+          title: "Junior Software Engineer",
+          content: [
+            "Mitglied eines Microservice-Web-Entwicklungsprojekts mit Java (Quarkus), Angular und NGRX",
+            "Fullstack-Entwicklung eines Auto-Messaging-Services",
+            "Verantwortlich für ein monolithisches Web-Entwicklungsprojekt mit Angular, NodeJS, RXJS und TypeORM",
+            "Fullstack-Entwicklung einer Medienverwaltungs-Website mit Implementierung neuer Funktionen sowie Refactoring von altem Code zur Performance-Verbesserung",
+            "Code-Commits in GIT und Deployment von Updates in der Microsoft Azure Cloud",
+            "Analyse von Nutzeranforderungen und Vorschlag passender Lösungen",
+            "Regelmäßige Kommunikation mit Product Ownern der BMW Group",
+          ],
         },
         {
-          date: "TODO: work[2].date",
-          location: "TODO: work[2].location",
-          title: "TODO: work[2].title",
-          content: ["TODO: work[2].content[0]"],
+          date: "März 2020 - August 2020",
+          location: "CipSoft GmbH, Regensburg, Deutschland",
+          title: "Praktikant",
+          content: [
+            'Verantwortlich für das Projekt „Visualisierung der Beziehungen zwischen Spielinhalten"',
+            "Recherche und Erstellung der Dokumentation zum Bulk-Import in eine Neo4j-Datenbank",
+            "Sauberer, übersichtlicher Code zum Exportieren von Spielinhalten und deren Beziehungen. Plugin für Game Designer entwickelt, um die Datenbank ohne Query-Kenntnisse zu nutzen",
+            "Skripte erstellt und Jenkins zur Automatisierung des Prozesses konfiguriert",
+            "Effektive Zusammenarbeit mit Mitgliedern des Entwicklungsteams sowie mit Personal anderer Abteilungen",
+          ],
         },
       ],
       education: [
         {
-          date: "TODO: education[0].date",
-          location: "TODO: education[0].location",
-          title: "TODO: education[0].title",
-          content: ["TODO: education[0].content[0]"],
+          date: "März 2018 - Februar 2022",
+          location: "OTH Regensburg, Deutschland",
+          title: "Bachelor of Science in Informatik",
+          content: [
+            "Kurse in Computergrafik, KI, Software Engineering und Softwarearchitektur-Design. " +
+            "Bachelorarbeit: Framework zur Erstellung von KIs und zum Vergleich verschiedener KI-Algorithmen.",
+          ],
         },
         {
-          date: "TODO: education[1].date",
-          location: "TODO: education[1].location",
-          title: "TODO: education[1].title",
-          content: ["TODO: education[1].content[0]"],
+          date: "September 2015 - Juli 2017",
+          location: "Technik FOS München, Deutschland",
+          title: "Fachhochschulreife (Technik)",
+          content: [
+            "Schulunterricht ergänzt durch ein 10-wöchiges Praktikum im Bereich Elektrotechnik und" +
+            " ein 10-wöchiges Praktikum im Bereich Metalltechnik.",
+          ],
         },
       ],
     },
     footer: {
-      copyright: "TODO: footer.copyright",
+      copyright: "Alle Rechte vorbehalten",
     },
   },
   tr: {
     navbar: {
-      about: "TODO: About",
-      projects: "TODO: Projects",
-      resume: "TODO: Resume",
-      languageLabel: "TODO: Language",
+      about: "Hakkımda",
+      projects: "Projeler",
+      resume: "Özgeçmiş",
+      languageLabel: "Dil",
     },
     about: {
-      name: "TODO: about.name",
-      header: "TODO: about.header",
-      description: "TODO: about.description",
+      name: "Merhaba, ben Burhan Köseler. ",
+      header: "Japonya'da yaşayan tutkulu bir Software Engineer 📍",
+      description:
+        "Merhaba, adım Burhan ve ben bir Software Engineer. \n" +
+        "Tutkum, kullanıcılarım için temiz servisler ve temiz web siteleri tasarlayıp geliştirmektir. " +
+        "Hem otomotiv sektöründe hem de oyun sektöründe çalıştım; " +
+        "web uygulamaları için mikroservisler ve çeşitli sunucu uygulamaları üzerinde, çoğunlukla Java ve Kotlin ile çalıştım. \n" +
+        "Almanca, İngilizce, Türkçe ve Japoncayı akıcı şekilde konuşuyorum. ",
     },
     skills: {
-      title: "TODO: skills.title",
+      title: "Yetenekler ve Teknolojiler",
     },
     projects: {
-      title: "TODO: projects.title",
+      title: "Projeler",
       items: [
         {
-          title: "TODO: projects.items[0].title",
-          description: "TODO: projects.items[0].description",
+          title: "[ŞU AN ÇEVRİMDIŞI] Monkey Ticket",
+          description:
+            "Mikroservisler kullanarak bilet yeniden satışı sağlayan bir web servisi. React ve NodeJS üzerine kuruludur ve mikroservisler arasında olay tabanlı iletişim kullanır. DigitalOcean üzerinde Kubernetes ile dağıtılmıştır.",
         },
       ],
     },
     resume: {
-      title: "TODO: resume.title",
-      workLabel: "TODO: resume.workLabel",
-      educationLabel: "TODO: resume.educationLabel",
+      title: "Özgeçmiş",
+      workLabel: "İş Deneyimi",
+      educationLabel: "Eğitim",
       work: [
         {
-          date: "TODO: work[0].date",
-          location: "TODO: work[0].location",
-          title: "TODO: work[0].title",
-          content: ["TODO: work[0].content[0]"],
+          date: "Mart 2024 - günümüz",
+          location: "Soft Gear CO., Ltd., Tokyo/Osaka, Japonya",
+          title: "Oyun Sunucu Mühendisi",
+          content: [
+            "Gerçek zamanlı bir aksiyon oyunu için oyun sunucuları geliştiren bir Ar-Ge ekibinin üyesi",
+            "Müşteri spesifikasyonlarına uygun tasarım dokümanları hazırlama",
+            "Müşteri/arayüz partneri ile düzenli iletişim",
+            "Belirli kriterlere göre istemcileri eşleştiren güvenilir bir matchmaker'ın tasarımına ve uygulanmasına liderlik etme",
+            "Hesap bilgilerini yöneten ve oyun istemcisi ile oyun sunucularıyla iletişim kuran web API bileşeninin sahipliği",
+            "Geliştirme sürecinde sunucuların dağıtıldığı AWS altyapısından sorumluluk.",
+          ],
         },
         {
-          date: "TODO: work[1].date",
-          location: "TODO: work[1].location",
-          title: "TODO: work[1].title",
-          content: ["TODO: work[1].content[0]"],
+          date: "Temmuz 2022 - Ekim 2023",
+          location: "Xibix Solutions GmbH, Münih, Almanya",
+          title: "Junior Yazılım Mühendisi",
+          content: [
+            "Java (Quarkus), Angular ve NGRX kullanan bir mikroservis web geliştirme projesinin ekip üyesi",
+            "Bir araç mesajlaşma servisinin fullstack geliştirilmesi",
+            "Angular, NodeJS, RXJS ve TypeORM kullanan monolitik bir web projesinin sahipliği",
+            "Yeni özellikler ekleyen ve performansı artırmak için eski kodu yeniden düzenleyen bir medya yönetim sitesinin fullstack geliştirilmesi",
+            "Kodu GIT'e işleme ve güncellemeleri Microsoft Azure Cloud'a dağıtma",
+            "Kullanıcı ihtiyaçlarını analiz etme ve bunları karşılayacak çözümler önerme",
+            "BMW Group Product Owner'ları ile düzenli iletişim",
+          ],
         },
         {
-          date: "TODO: work[2].date",
-          location: "TODO: work[2].location",
-          title: "TODO: work[2].title",
-          content: ["TODO: work[2].content[0]"],
+          date: "Mart 2020 - Ağustos 2020",
+          location: "CipSoft GmbH, Regensburg, Almanya",
+          title: "Stajyer",
+          content: [
+            '"Oyun içerikleri arasındaki ilişkileri görselleştirme" projesinin sahipliği',
+            "Neo4j veritabanına toplu içe aktarma konusunda araştırma ve dokümantasyon hazırlama",
+            "Oyun içeriklerini ve ilişkilerini dışa aktarmak için temiz, düzenli kod yazma. Oyun tasarımcılarının sorgu bilgisine ihtiyaç duymadan veritabanını kullanabilmesi için eklenti geliştirme",
+            "Sürecin otomatikleştirilmesi için scriptler yazma ve Jenkins'i yapılandırma",
+            "Yazılım geliştirme ekibi üyeleri ve diğer departmanlardaki personel ile etkili iş birliği",
+          ],
         },
       ],
       education: [
         {
-          date: "TODO: education[0].date",
-          location: "TODO: education[0].location",
-          title: "TODO: education[0].title",
-          content: ["TODO: education[0].content[0]"],
+          date: "Mart 2018 - Şubat 2022",
+          location: "OTH Regensburg, Almanya",
+          title: "Bilgisayar Bilimleri Lisans Derecesi",
+          content: [
+            "Bilgisayar Grafikleri, Yapay Zeka, Yazılım Mühendisliği ve Yazılım Mimarisi Tasarımı dersleri. " +
+              "Lisans Tezi: Yapay zeka oluşturma ve farklı YZ algoritmalarını karşılaştırma için bir framework.",
+          ],
         },
         {
-          date: "TODO: education[1].date",
-          location: "TODO: education[1].location",
-          title: "TODO: education[1].title",
-          content: ["TODO: education[1].content[0]"],
+          date: "Eylül 2015 - Temmuz 2017",
+          location: "Technik FOS Münih, Almanya",
+          title: "Teknik Lise Mezuniyeti (FOS)",
+          content: [
+            "Lise dersleri ile birlikte 10 haftalık elektronik teknolojileri stajı ve" +
+              " 10 haftalık metal teknolojileri stajı.",
+          ],
         },
       ],
     },
     footer: {
-      copyright: "TODO: footer.copyright",
+      copyright: "Tüm hakları saklıdır",
     },
   },
   ja: {
     navbar: {
-      about: "TODO: About",
-      projects: "TODO: Projects",
-      resume: "TODO: Resume",
-      languageLabel: "TODO: Language",
+      about: "自己紹介",
+      projects: "プロジェクト",
+      resume: "経歴",
+      languageLabel: "言語",
     },
     about: {
-      name: "TODO: about.name",
-      header: "TODO: about.header",
-      description: "TODO: about.description",
+      name: "こんにちは、ブルハン・コーゼラーです。 ",
+      header: "日本在住なソフトウェアエンジニアです 📍",
+      description:
+        "こんにちは、ブルハンと申します。ソフトウェアエンジニアです。\n" +
+        "ユーザーのために、クリーンなサービスとクリーンなウェブサイトを設計・開発することに情熱を注いでいます。" +
+        "自動車業界およびゲーム業界での勤務経験があり、" +
+        "主に Java や Kotlin を用いて、ウェブアプリ向けのマイクロサービスやさまざまなサーバーアプリケーションの開発に携わってきました。\n" +
+        "ドイツ語、英語、トルコ語、日本語を流暢に話します。",
     },
     skills: {
-      title: "TODO: skills.title",
+      title: "スキル＆テクノロジー",
     },
     projects: {
-      title: "TODO: projects.title",
+      title: "プロジェクト",
       items: [
         {
-          title: "TODO: projects.items[0].title",
-          description: "TODO: projects.items[0].description",
+          title: "[現在オフライン] Monkey Ticket",
+          description:
+            "マイクロサービスを用いたチケット再販ウェブサービス。React と NodeJS をベースに構築し、マイクロサービス間はイベントベースで通信します。DigitalOcean 上の Kubernetes でデプロイしました。",
         },
       ],
     },
     resume: {
-      title: "TODO: resume.title",
-      workLabel: "TODO: resume.workLabel",
-      educationLabel: "TODO: resume.educationLabel",
+      title: "経歴",
+      workLabel: "職務経歴",
+      educationLabel: "学歴",
       work: [
         {
-          date: "TODO: work[0].date",
-          location: "TODO: work[0].location",
-          title: "TODO: work[0].title",
-          content: ["TODO: work[0].content[0]"],
+          date: "2024年3月 〜 現在",
+          location: "株式会社Soft Gear、東京／大阪、日本",
+          title: "ゲームサーバーエンジニア",
+          content: [
+            "リアルタイムアクションゲーム向けのゲームサーバーを開発するR&Dチームのメンバー",
+            "クライアントの仕様に基づいた設計ドキュメントの作成",
+            "クライアント／インターフェース担当との定期的なコミュニケーション",
+            "特定の条件に基づいてクライアント同士をマッチングする、信頼性の高いマッチメイカーの設計と実装をリード",
+            "アカウント情報を扱い、ゲームクライアントおよびゲームサーバーと通信する Web API コンポーネントのオーナーシップ",
+            "開発中にサーバーがデプロイされる AWS インフラの責任者。",
+          ],
         },
         {
-          date: "TODO: work[1].date",
-          location: "TODO: work[1].location",
-          title: "TODO: work[1].title",
-          content: ["TODO: work[1].content[0]"],
+          date: "2022年7月 〜 2023年10月",
+          location: "Xibix Solutions GmbH、ミュンヘン、ドイツ",
+          title: "ジュニア・ソフトウェアエンジニア",
+          content: [
+            "Java (Quarkus)、Angular、NGRX を用いたマイクロサービス Web 開発プロジェクトのチームメンバー",
+            "車載メッセージングサービスのフルスタック開発",
+            "Angular、NodeJS、RXJS、TypeORM を用いたモノリシックな Web 開発プロジェクトのオーナーシップ",
+            "新機能の実装とパフォーマンス改善のための既存コードのリファクタリングを含む、メディア管理ウェブサイトのフルスタック開発",
+            "コードを Git にコミットし、更新を Microsoft Azure Cloud にデプロイ",
+            "ユーザーニーズの分析と、それを満たすためのソリューション提案",
+            "BMW Group のプロダクトオーナーとの定期的なコミュニケーション",
+          ],
         },
         {
-          date: "TODO: work[2].date",
-          location: "TODO: work[2].location",
-          title: "TODO: work[2].title",
-          content: ["TODO: work[2].content[0]"],
+          date: "2020年3月 〜 2020年8月",
+          location: "CipSoft GmbH、レーゲンスブルク、ドイツ",
+          title: "インターン",
+          content: [
+            "「ゲームコンテンツ間の関係性の可視化」プロジェクトのオーナーシップ",
+            "Neo4j データベースへのバルクインポートに関する調査とドキュメント作成",
+            "ゲームコンテンツとその関係性をエクスポートするためのクリーンで読みやすいコードの作成。ゲームデザイナーがクエリの知識なしでデータベースを利用できるプラグインを開発",
+            "プロセス自動化のためのスクリプト作成と Jenkins の設定",
+            "ソフトウェア開発チームのメンバーや他部署のスタッフとの効果的な協業",
+          ],
         },
       ],
       education: [
         {
-          date: "TODO: education[0].date",
-          location: "TODO: education[0].location",
-          title: "TODO: education[0].title",
-          content: ["TODO: education[0].content[0]"],
+          date: "2018年3月 〜 2022年2月",
+          location: "OTH レーゲンスブルク、ドイツ",
+          title: "コンピュータサイエンス学士号",
+          content: [
+            "コンピュータグラフィックス、AI、ソフトウェアエンジニアリング、ソフトウェアアーキテクチャ設計などの講義を履修。" +
+              "学士論文：AI 作成および異なる AI アルゴリズムの比較のためのフレームワーク。",
+          ],
         },
         {
-          date: "TODO: education[1].date",
-          location: "TODO: education[1].location",
-          title: "TODO: education[1].title",
-          content: ["TODO: education[1].content[0]"],
+          date: "2015年9月 〜 2017年7月",
+          location: "Technik FOS ミュンヘン、ドイツ",
+          title: "技術系上級専門学校卒業（FOS）",
+          content: [
+            "通常の高校授業に加え、電子技術分野での10週間のインターンシップと" +
+              "金属技術分野での10週間のインターンシップを履修。",
+          ],
         },
       ],
     },
     footer: {
-      copyright: "TODO: footer.copyright",
+      copyright: "All Rights Reserved",
     },
   },
 };
