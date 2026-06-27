@@ -1,8 +1,11 @@
 import { FC, PropsWithChildren } from "react";
 import classNames from 'classnames';
-import { navbarItems } from "../../../data/data";
+import { navbarLinks } from "../../../data/data";
+import { useLanguage } from "../../../contexts/LanguageContext";
+import LanguagePicker from "./LanguagePicker";
 
 const Hamburger: FC<PropsWithChildren<{ isOpen: boolean }>> = ({ isOpen }) => {
+    const { t } = useLanguage();
     const button = classNames("w-8 h-8 flex justify-around flex-nowrap flex-col",
         "z-10 transition-all duration-300 ease-linear", isOpen ? "translate-x-1" : "");
     const slideMenu = classNames(isOpen ? "flex" : "hidden", "flex flex-col",
@@ -15,9 +18,10 @@ const Hamburger: FC<PropsWithChildren<{ isOpen: boolean }>> = ({ isOpen }) => {
     return (
         <>
             <nav className={classNames(slideMenu)}>
-                {navbarItems.map(item => (
-                    <a key={item.name} href={item.href} className="mr-5 text-4xl p-4 hover:text-sky-300">
-                        {item.name}
+                <LanguagePicker className="mb-6" />
+                {navbarLinks.map(item => (
+                    <a key={item.translationKey} href={item.href} className="mr-5 text-4xl p-4 hover:text-sky-300">
+                        {t.navbar[item.translationKey]}
                     </a>
                 ))}
             </nav>

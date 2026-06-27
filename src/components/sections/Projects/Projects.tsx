@@ -1,14 +1,28 @@
 import { ArrowTopRightOnSquareIcon, CodeBracketIcon } from "@heroicons/react/24/solid";
 import React, { FC, memo, useRef } from "react";
-import { projects, SectionId } from "../../../data/data";
+import { projectAssets, SectionId } from "../../../data/data";
+import { useLanguage } from "../../../contexts/LanguageContext";
 import Image from 'next/image';
 import Section from "../../layout/Section";
-import { ProjectItem } from "../../../data/dataDef";
+
+interface ResolvedProject {
+  url: string;
+  image: string;
+  title: string;
+  description: string;
+}
 
 const Projects = () => {
+  const { t } = useLanguage();
+  const resolved: ResolvedProject[] = t.projects.items.map((copy, index) => ({
+    ...copy,
+    url: projectAssets[index]?.url ?? "",
+    image: projectAssets[index]?.image ?? "",
+  }));
+
   let content =
     <div className=" w-full columns-2 md:columns-3 lg:columns-4">
-      {projects.map((item, index) => {
+      {resolved.map((item, index) => {
         const { title, image } = item;
         return (
           <div className="pb-6" key={`${title}-${index}`}>
@@ -26,7 +40,7 @@ const Projects = () => {
       <div className="container max-w-7xl px-5 pb-10 mx-auto text-center">
         <CodeBracketIcon className="mx-auto inline-block w-10 mb-4" />
         <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4">
-          Projects
+          {t.projects.title}
         </h1>
       </div>
       {content}
@@ -36,7 +50,7 @@ const Projects = () => {
 
 export default Projects;
 
-const ItemOverlay: FC<{ item: ProjectItem }> = memo(({ item: { url, title, description } }) => {
+const ItemOverlay: FC<{ item: ResolvedProject }> = memo(({ item: { url, title, description } }) => {
   const linkRef = useRef<HTMLAnchorElement>(null);
   return (
     <a
