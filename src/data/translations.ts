@@ -81,7 +81,7 @@ export const translations: Record<Language, Translation> = {
       title: "Projects",
       items: [
         {
-          title: "[CURRENTLY OFFLINE] Monkey Ticket",
+          title: "Monkey Ticket",
           description:
             "Web service for reselling tickets using micro services. Built on React and NodeJS with event based communication between the microservices. Deployed with Kubernetes on DigitalOcean",
         },
@@ -181,7 +181,7 @@ export const translations: Record<Language, Translation> = {
       title: "Projekte",
       items: [
         {
-          title: "[DERZEIT OFFLINE] Monkey Ticket",
+          title: "Monkey Ticket",
           description:
             "Webservice zum Weiterverkauf von Tickets aufgebaut mit Microservices. Entwickelt mit React und NodeJS, mit event-based Kommunikation zwischen den Microservices. Bereitgestellt mit Kubernetes auf DigitalOcean.",
         },
@@ -281,7 +281,7 @@ export const translations: Record<Language, Translation> = {
       title: "Projeler",
       items: [
         {
-          title: "[ŞU AN ÇEVRİMDIŞI] Monkey Ticket",
+          title: "Monkey Ticket",
           description:
             "Mikroservisler kullanarak bilet yeniden satışı sağlayan bir web servisi. React ve NodeJS üzerine kuruludur ve mikroservisler arasında olay tabanlı iletişim kullanır. DigitalOcean üzerinde Kubernetes ile dağıtılmıştır.",
         },
@@ -381,7 +381,7 @@ export const translations: Record<Language, Translation> = {
       title: "プロジェクト",
       items: [
         {
-          title: "[現在オフライン] Monkey Ticket",
+          title: "Monkey Ticket",
           description:
             "マイクロサービスを用いたチケット再販ウェブサービス。React と NodeJS をベースに構築し、マイクロサービス間はイベントベースで通信します。DigitalOcean 上の Kubernetes でデプロイしました。",
         },

@@ -33,7 +33,7 @@ export const heroImage = heroPicture;
 
 export const projectAssets: { url: string; image: string }[] = [
   {
-    url: "http://www.monkey-ticket.site",
+    url: "https://www.monkey-ticket.site",
     image: monkeyTicketPicture,
   },
 ];
